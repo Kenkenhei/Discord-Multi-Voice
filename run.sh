@@ -21,7 +21,7 @@ fi
 python3 --version
 
 # 3. Setup Venv
-VENV_DIR="venv"
+VENV_DIR=".venv"
 
 if [ ! -d "$VENV_DIR" ]; then
     echo -e "${YELLOW}[!] Đang khởi tạo venv mới...${NC}"
@@ -57,11 +57,11 @@ else
     echo -e "${GREEN}[v] Sử dụng venv có sẵn.${NC}"
 fi
 
-# 4. Run Bot
+# 4. Run Dashboard
 echo -e "${GREEN}[*] Đang khởi động Bot...${NC}"
 echo "------------------------------------------------"
 
-./$VENV_DIR/bin/python3 self-bot.py
+./$VENV_DIR/bin/python3 dashboard.py
 
 EXIT_CODE=$?
 
@@ -71,5 +71,3 @@ if [ $EXIT_CODE -ne 0 ]; then
 else
     echo -e "${GREEN}[!] Bot đã dừng.${NC}"
 fi
-
-read -p "Ấn Enter để thoát..."
