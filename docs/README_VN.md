@@ -25,6 +25,10 @@
 <a href="#bảo-mật-và-quyền-riêng-tư">Bảo mật</a> ·
 <a href="#khắc-phục-sự-cố">Khắc phục sự cố</a>
 
+<br><br>
+
+<img src="fig.png" alt="Discord Multi-Token Voice Web Dashboard" width="100%">
+
 </div>
 
 ---
@@ -92,6 +96,10 @@ Cả hai giao diện dùng chung engine (`core/engine.py`), cấu hình (`config
 | Đổi tên (một / tất cả) | ✅ | ✅ Đổi tên tất cả |
 
 ## Web Dashboard
+
+<p align="center">
+  <img src="fig.png" alt="Discord Multi-Token Voice Web Dashboard" width="100%">
+</p>
 
 ```
 GET /            →   Dashboard single-page (HTML/CSS/JS inline)
@@ -171,8 +179,8 @@ chmod +x run.sh
 
 ```bash
 # 1. Clone
-git clone https://github.com/kwishtt/Discord-Mutli-Voice-Token.git
-cd Discord-Mutli-Voice-Token
+git clone https://github.com/kwishtt/Discord-Multi-Voice.git
+cd Discord-Multi-Voice
 
 # 2. Tạo môi trường ảo
 python3 -m venv .venv
@@ -557,7 +565,7 @@ chmod +x run.sh
 Repository hiện **chưa có file `LICENSE`**. Trừ khi giấy phép được bổ sung, tác giả giữ mọi quyền — hãy liên hệ maintainer trước khi phân phối lại hoặc tái sử dụng mã nguồn.
 
 - **Tác giả / maintainer:** [kwishtt](https://github.com/kwishtt)
-- **Repository:** [github.com/kwishtt/Discord-Mutli-Voice-Token](https://github.com/kwishtt/Discord-Mutli-Voice-Token)
+- **Repository:** [github.com/kwishtt/Discord-Multi-Voice](https://github.com/kwishtt/Discord-Multi-Voice/tree/main)
 - **Xây dựng trên:** [discord.py-self](https://github.com/dolfies/discord.py-self), [FastAPI](https://fastapi.tiangolo.com/), [Uvicorn](https://www.uvicorn.org/), [PyJWT](https://pyjwt.readthedocs.io/), [python-dotenv](https://github.com/theskumar/python-dotenv), [Cloudflare Tunnel](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/do-more-with-tunnels/trycloudflare/)
 
 <div align="center">

@@ -25,6 +25,10 @@
 <a href="#security-and-privacy">Security</a> ·
 <a href="#troubleshooting">Troubleshooting</a>
 
+<br><br>
+
+<img src="docs/fig.png" alt="Discord Multi-Token Voice Web Dashboard" width="100%">
+
 </div>
 
 ---
@@ -92,6 +96,10 @@ Both interfaces share the same engine (`core/engine.py`), the same configuration
 | Rename (single / all) | ✅ | ✅ Rename all |
 
 ## Web Dashboard
+
+<p align="center">
+  <img src="docs/fig.png" alt="Discord Multi-Token Voice Web Dashboard" width="100%">
+</p>
 
 ```
 GET /            →   Single-page dashboard (inline HTML/CSS/JS)
@@ -171,8 +179,8 @@ chmod +x run.sh
 
 ```bash
 # 1. Clone
-git clone https://github.com/kwishtt/Discord-Mutli-Voice-Token.git
-cd Discord-Mutli-Voice-Token
+git clone https://github.com/kwishtt/Discord-Multi-Voice.git
+cd Discord-Multi-Voice
 
 # 2. Create the virtual environment
 python3 -m venv .venv
@@ -557,7 +565,7 @@ Under consideration:
 No `LICENSE` file is currently included in this repository. Unless a license is added, all rights are reserved by the author — contact the maintainer before redistributing or reusing this code.
 
 - **Author / maintainer:** [kwishtt](https://github.com/kwishtt)
-- **Repository:** [github.com/kwishtt/Discord-Mutli-Voice-Token](https://github.com/kwishtt/Discord-Mutli-Voice-Token)
+- **Repository:** [github.com/kwishtt/Discord-Multi-Voice](https://github.com/kwishtt/Discord-Multi-Voice/tree/main)
 - **Built with:** [discord.py-self](https://github.com/dolfies/discord.py-self), [FastAPI](https://fastapi.tiangolo.com/), [Uvicorn](https://www.uvicorn.org/), [PyJWT](https://pyjwt.readthedocs.io/), [python-dotenv](https://github.com/theskumar/python-dotenv), [Cloudflare Tunnel](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/do-more-with-tunnels/trycloudflare/)
 
 <div align="center">
