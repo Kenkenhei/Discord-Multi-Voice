@@ -51,7 +51,7 @@ def first_run_setup() -> None:
     if ENV_FILE.exists():
         return
 
-    password = os.environ.get("Đặt mật khẩu dashboard: ")
+    password = os.environ.get("PASSWORD")
     jwt_secret = secrets.token_hex(32)
     ENV_FILE.write_text(
         f"DASHBOARD_PASSWORD={password}\nJWT_SECRET={jwt_secret}\n",
