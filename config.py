@@ -84,7 +84,7 @@ class AppConfig:
 
         self.host = os.getenv("HOST", "0.0.0.0")
         self.port = _env_int("PORT", 8080)
-        self.password = os.getenv("DASHBOARD_PASSWORD", "")
+        self.password = os.environ.get("PASSWORD", "")
         self.jwt_secret = os.getenv("JWT_SECRET", "")
         self.jwt_algorithm = os.getenv("JWT_ALGORITHM", "HS256")
         self.jwt_expire_hours = _env_int("JWT_EXPIRE_HOURS", 72)
